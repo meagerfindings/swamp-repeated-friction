@@ -1,0 +1,82 @@
+{
+  "extension": "@mgreten/repeated-friction",
+  "version": "2026.08.23.1",
+  "reviewedAt": "2026-08-23T21:09:00Z",
+  "dimensions": [
+    {
+      "id": "credentials-secrets",
+      "verdict": "na",
+      "note": "No credentials or configuration are accepted; credential-bearing evidence URLs are rejected."
+    },
+    {
+      "id": "logging-quality",
+      "verdict": "pass",
+      "note": "Evaluate logs structured entry and completion messages without evidence content."
+    },
+    {
+      "id": "error-handling",
+      "verdict": "pass",
+      "note": "Strict parsing, chronology, identity, privacy, and output bounds fail before the sole write."
+    },
+    {
+      "id": "testing-completeness",
+      "verdict": "pass",
+      "note": "Tests cover deterministic grouping, thresholds, freshness/privacy, malformed identities, chronology, replay binding, output bounds, and persistence."
+    },
+    {
+      "id": "idempotency-resilience",
+      "verdict": "pass",
+      "note": "Request ID is bound to evaluation ID; equal replay inputs produce equal output and the same validated instance name."
+    },
+    {
+      "id": "api-contracts",
+      "verdict": "na",
+      "note": "No external API or network access exists."
+    },
+    {
+      "id": "resource-management",
+      "verdict": "na",
+      "note": "No external handles, temporary files, or remote resources exist."
+    },
+    {
+      "id": "published-surface-hygiene",
+      "verdict": "pass",
+      "note": "Published examples and fixtures contain only generic synthetic identifiers and example.test URLs."
+    },
+    {
+      "id": "schema-strictness",
+      "verdict": "pass",
+      "note": "All public and nested objects are strict; strings, arrays, inputs, groups, and evidence links are bounded."
+    },
+    {
+      "id": "lifetime-gc",
+      "verdict": "pass",
+      "note": "The sole evaluation resource declares infinite lifetime and bounded GC retention."
+    },
+    {
+      "id": "crud-completeness",
+      "verdict": "na",
+      "note": "This is a pure evaluator, not an external CRUD lifecycle model."
+    },
+    {
+      "id": "preflight-checks",
+      "verdict": "na",
+      "note": "No external mutation or provider operation exists."
+    },
+    {
+      "id": "instance-names",
+      "verdict": "pass",
+      "note": "The sole write uses evaluation-<validated requestId>, bound to evaluationId."
+    },
+    {
+      "id": "data-access",
+      "verdict": "na",
+      "note": "No stored state is read."
+    },
+    {
+      "id": "version-upgrades",
+      "verdict": "na",
+      "note": "Initial unpublished version; the registry reports no prior publication."
+    }
+  ]
+}
