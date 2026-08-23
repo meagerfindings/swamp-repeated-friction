@@ -1,0 +1,22 @@
+{
+  "extension": "@mgreten/repeated-friction",
+  "version": "2026.08.23.1",
+  "reviewedAt": "2026-08-23T15:07:13Z",
+  "dimensions": [
+    { "id": "credentials-secrets", "verdict": "na", "note": "No credentials or configuration." },
+    { "id": "logging-quality", "verdict": "issue", "note": "evaluate emits no entry or completion log." },
+    { "id": "error-handling", "verdict": "pass", "note": "Strict bounds and identity validation fail before persistence." },
+    { "id": "testing-completeness", "verdict": "pass", "note": "Tests cover grouping, thresholds, identities, chronology, bounds, and persistence." },
+    { "id": "idempotency-resilience", "verdict": "pass", "note": "Stable request IDs and deterministic input produce stable resources." },
+    { "id": "api-contracts", "verdict": "na", "note": "No external API calls." },
+    { "id": "resource-management", "verdict": "na", "note": "No external handles or temporary resources." },
+    { "id": "published-surface-hygiene", "verdict": "pass", "note": "Published examples and fixtures are generic and synthetic." },
+    { "id": "schema-strictness", "verdict": "pass", "note": "Public arguments and nested evidence contracts are strict." },
+    { "id": "lifetime-gc", "verdict": "pass", "note": "The evaluation resource declares infinite lifetime and GC retention." },
+    { "id": "crud-completeness", "verdict": "na", "note": "This is an evaluator, not an external CRUD lifecycle model." },
+    { "id": "preflight-checks", "verdict": "na", "note": "No external mutating method exists." },
+    { "id": "instance-names", "verdict": "pass", "note": "The sole write uses evaluation-<validated requestId>." },
+    { "id": "data-access", "verdict": "na", "note": "No stored state is read." },
+    { "id": "version-upgrades", "verdict": "na", "note": "Initial standalone publication; no prior published version exists." }
+  ]
+}
